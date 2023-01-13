@@ -3,7 +3,7 @@
   font-weight: 700;
   font-size: xxx-large;
   color: transparent;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-coflor: transparent;
   -webkit-text-stroke: 0.046em #d2a2fe;
   background-clip: text;
   transform: rotate(-3deg) skewY(-5deg);
@@ -26,7 +26,6 @@
 
 header {
   background-color: black;
-  height: 100%;
   /*background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
   overflow: hidden;
 }
@@ -91,7 +90,6 @@ header {
   text-align: center;
   font-family: "lato", sans-serif;
   font-weight: 300;
-  font-size: 50px;
   letter-spacing: 10px;
   margin-top: -60px;
   padding-left: 10px;

@@ -11,6 +11,8 @@ nav {
   float: left;
   width: 10%;
   background: white;
+  padding: 5px;
+  height: 80vh;
 }
 
 nav ul {
@@ -31,6 +33,7 @@ article p, article h1 {
   box-sizing: border-box;
 }
 
+
 /* Clear floats after the columns */
 section::after {
   content: "";
@@ -44,6 +47,17 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+  height: 5vh;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+footer marquee p {
+  margin: 0;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */

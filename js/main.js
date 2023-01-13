@@ -1,41 +1,70 @@
-import * as Rx from "rx";
+var section = document.getElementById("section");
+var header = document.getElementById("header");
+var footer = document.getElementById("footer");
+var body = document.getElementById("header");
+// window.onresize = function () {
+//   section.style.width = `${body.clientHeight - header.clientWidth - footer.clientWidth}px`;
+// }
+// section.style.width = `${body.clientHeight - header.clientWidth - footer.clientWidth}px`;
 
-const timeElm = document.getElementById('time');
-const doc = document.documentElement;
-const { clientWidth, clientHeight } = doc;
 
-const pad = (val) => val < 10 ? `0${val}` : val;
+var clock = document.getElementById("clock");
+var ctx = clock.getContext("2d");
 
-const animationFrame$ = Rx.Observable.interval(0, Rx.Scheduler.animationFrame);
+ctx.strokeStyle = '#00ffff';
+ctx.lineWidth = 17;
+ctx.shadowBlur= 15;
+ctx.shadowColor = '#00ffff'
 
-const time$ = Rx.Observable
-  .interval(1000)
-  .map(() => {
-    const time = new Date();
+window.onresize = function () {
+  clock.style.width = '100%';
+}
+clock.style.width = '100%';
 
-    return {
-      hours: time.getHours(),
-      minutes: time.getMinutes(),
-      seconds: time.getSeconds(),
-    };
-  })
-  .subscribe(({ hours, minutes, seconds}) => {
-    timeElm.setAttribute('data-hours', pad(hours));
-    timeElm.setAttribute('data-minutes', pad(minutes));
-    timeElm.setAttribute('data-seconds', pad(seconds));
-  });
+function degToRad(degree){
+  var factor = Math.PI/180;
+  return degree*factor;
+}
 
-const mouse$ = Rx.Observable
-  .fromEvent(document, 'mousemove')
-  .map(({clientX, clientY}) => ({
-    x: (clientWidth / 2 - clientX) / clientWidth,
-    y: (clientHeight / 2 - clientY) / clientHeight,
-  }));
+function renderTime(){
+  var now = new Date();
+  var today = now.toDateString();
+  var time = now.toLocaleTimeString();
+  var hrs = now.getHours();
+  var min = now.getMinutes();
+  var sec = now.getSeconds();
+  var mil = now.getMilliseconds();
+  var smoothsec = sec+(mil/1000);
+  var smoothmin = min+(smoothsec/60);
 
-const smoothMouse$ = animationFrame$
-  .withLatestFrom(mouse$, (_, m) => m)
-  .scan(RxCSS.lerp(0.1));
+  //Background
+  gradient = ctx.createRadialGradient(250, 250, 5, 250, 250, 300);
+  gradient.addColorStop(0, "#03303a");
+  gradient.addColorStop(1, "black");
+  ctx.fillStyle = gradient;
+  //ctx.fillStyle = 'rgba(00 ,00 , 00, 1)';
+  ctx.fillRect(0, 0, 500, 500);
+  //Hours
+  ctx.beginPath();
+  ctx.arc(250,250,200, degToRad(270), degToRad((hrs*30)-90));
+  ctx.stroke();
+  //Minutes
+  ctx.beginPath();
+  ctx.arc(250,250,170, degToRad(270), degToRad((smoothmin*6)-90));
+  ctx.stroke();
+  //Seconds
+  ctx.beginPath();
+  ctx.arc(250,250,140, degToRad(270), degToRad((smoothsec*6)-90));
+  ctx.stroke();
+  //Date
+  ctx.font = "25px Comic Sans MS";
+  ctx.fillStyle = 'rgba(00, 255, 255, 1)'
+  ctx.fillText(today, 175, 250);
+  //Time
+  ctx.font = "25px Comic Sans MS Bold";
+  ctx.fillStyle = 'rgba(00, 255, 255, 1)';
+  ctx.fillText(time+":"+mil, 175, 280);
 
-RxCSS({
-  mouse: smoothMouse$
-}, timeElm);
+}
+setInterval(renderTime, 40);
+

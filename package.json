@@ -1,10 +1,10 @@
 {
-  "name": " ",
+  "name": "My Website",
   "version": "0.0.1",
   "description": "",
-  "keywords": "",
+  "keywords": [],
   "license": "",
-  "author": "",
+  "author": "Kamil Gwóźdź",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
@@ -15,7 +15,5 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "rx": "^4.1.0",
-    "rxcss": "^0.10.0"
   }
 }
