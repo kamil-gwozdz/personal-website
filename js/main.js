@@ -1,3 +1,5 @@
+import * as rxjs from "rxjs";
+
 const timeElm = document.getElementById('time');
 const doc = document.documentElement;
 const { clientWidth, clientHeight } = doc;
