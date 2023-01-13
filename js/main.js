@@ -1,4 +1,4 @@
-import * as rxjs from "rxjs";
+import * as Rx from "rx";
 
 const timeElm = document.getElementById('time');
 const doc = document.documentElement;
@@ -6,9 +6,9 @@ const { clientWidth, clientHeight } = doc;
 
 const pad = (val) => val < 10 ? `0${val}` : val;
 
-const animationFrame$ = rxjs.Observable.interval(0, rxjs.Scheduler.animationFrame);
+const animationFrame$ = Rx.Observable.interval(0, Rx.Scheduler.animationFrame);
 
-const time$ = rxjs.Observable
+const time$ = Rx.Observable
   .interval(1000)
   .map(() => {
     const time = new Date();
@@ -25,7 +25,7 @@ const time$ = rxjs.Observable
     timeElm.setAttribute('data-seconds', pad(seconds));
   });
 
-const mouse$ = rxjs.Observable
+const mouse$ = Rx.Observable
   .fromEvent(document, 'mousemove')
   .map(({clientX, clientY}) => ({
     x: (clientWidth / 2 - clientX) / clientWidth,
@@ -34,8 +34,8 @@ const mouse$ = rxjs.Observable
 
 const smoothMouse$ = animationFrame$
   .withLatestFrom(mouse$, (_, m) => m)
-  .scan(rxjsCSS.lerp(0.1));
+  .scan(RxCSS.lerp(0.1));
 
-rxjsCSS({
+RxCSS({
   mouse: smoothMouse$
 }, timeElm);
