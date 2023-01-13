@@ -16,7 +16,7 @@ permissions:
   id-token: write
 
 env:
-  NODE_VERSION: '14.x'
+  NODE_VERSION: '18.x'
 
 # Allow one concurrent deployment
 concurrency:
