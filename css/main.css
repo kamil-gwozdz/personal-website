@@ -261,3 +261,16 @@ textarea {
   }
 }
 
+@font-face {
+  font-family: comicSans;
+  src: url(fonts/comic-sans.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: comicSansItalic;
+  src: url(fonts/comic-sans.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
