@@ -1,13 +1,3 @@
-var section = document.getElementById("section");
-var header = document.getElementById("header");
-var footer = document.getElementById("footer");
-var body = document.getElementById("header");
-// window.onresize = function () {
-//   section.style.width = `${body.clientHeight - header.clientWidth - footer.clientWidth}px`;
-// }
-// section.style.width = `${body.clientHeight - header.clientWidth - footer.clientWidth}px`;
-
-
 var clock = document.getElementById("clock");
 var ctx = clock.getContext("2d");
 
