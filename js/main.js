@@ -64,3 +64,15 @@ function renderTime(){
 
 }
 setInterval(renderTime, 40);
+
+async function animateCursor(frame) {
+  document.body.style.cursor = `url(https://gwozdz.me/cursor_frames/${frame}.png), auto;`;
+  frame += 1;
+  frame %= 4;
+  await new Promise(r => setTimeout(r, 100));
+  console.log("hello");
+  console.log(document.body.style.cursor);
+  await animateCursor(frame);
+}
+
+animateCursor(0);
