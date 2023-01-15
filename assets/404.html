@@ -12,7 +12,8 @@
     }
 
     html {
-      color: #888;
+      color: magenta;
+      background: yellow;
       display: table;
       font-family: sans-serif;
       height: 100%;
@@ -27,7 +28,7 @@
     }
 
     h1 {
-      color: #555;
+      color: magenta;
       font-size: 2em;
       font-weight: 400;
     }
@@ -50,12 +51,24 @@
       }
 
     }
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
   </style>
 </head>
 
-<body>
+<body style='font-family: "Comic Sans MS", "Comic Sans", "comicSansItalic", cursive'>
   <h1>Page Not Found</h1>
+  </br>
+  <img src="/404_cat.png" alt="Sad Cat" style="max-width: 50%; max-height: 50%; animation: rotation 6s infinite linear;">
   <p>Sorry, but the page you were trying to view does not exist.</p>
+  <p>Go back to <a href="https://gwozdz.me">the homepage</a>.</p>
 </body>
 
 </html>
