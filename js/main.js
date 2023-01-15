@@ -65,9 +65,8 @@ function renderTime(){
 }
 setInterval(renderTime, 40);
 
-
 async function animateCursor(frame) {
-  document.getElementsByTagName('body')[0].style.cursor = `url('https://gwozdz.me/cursor_frames/${frame}.png'), auto;`;
+  document.getElementsByTagName('body')[0].style.cursor = `url('https://gwozdz.me/cursor_frames/${frame}.png'), auto`;
   frame += 1;
   frame %= 4;
   await new Promise(r => setTimeout(r, 100));

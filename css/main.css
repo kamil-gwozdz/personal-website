@@ -275,6 +275,6 @@ textarea {
   font-style: italic;
 }
 
-/*body {*/
-/*  cursor: url(cursor.ani), url(cursor.png), auto;*/
-/*}*/
+body {
+  cursor: url('https://gwozdz.me/cursor_frames/0.png'), auto;
+}
