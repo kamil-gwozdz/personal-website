@@ -10,11 +10,17 @@ body {
 nav {
   float: left;
   width: fit-content;
-  max-width: 10%;
   background: white;
   padding: 5px;
   height: 80vh;
 }
+
+@media not screen and (max-width: 600px) {
+  nav {
+    max-width: 10%;
+  }
+}
+
 
 nav ul {
   padding: 0;
