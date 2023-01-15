@@ -65,11 +65,10 @@ function renderTime(){
 }
 setInterval(renderTime, 40);
 
-async function animateCursor(frame) {
+var frame = 0;
+function animateCursor() {
   document.getElementsByTagName('body')[0].style.cursor = `url('https://gwozdz.me/cursor_frames/${frame}.png'), auto`;
   frame += 1;
   frame %= 4;
-  await new Promise(r => setTimeout(r, 100));
-  await animateCursor(frame);
 }
-animateCursor(0);
+setInterval(animateCursor, 100);
