@@ -67,7 +67,7 @@ setInterval(renderTime, 40);
 
 let frame = 0;
 function animateCursor() {
-  document.getElementsByTagName('body')[0].style.cursor = `url('https://gwozdz.me/cursor_frames/${frame}.png'), auto`;
+  document.getElementsByTagName('body')[0].style.cursor = `url('/cursor_frames/${frame}.png'), auto`;
   frame += 1;
   frame %= 4;
 }
