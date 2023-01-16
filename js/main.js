@@ -72,3 +72,8 @@ function animateCursor() {
   frame %= 4;
 }
 setInterval(animateCursor, 100);
+
+
+window.addEventListener('load', (_event) => {
+  new cursoreffects.rainbowCursor({length: 35, size: 5});
+});
