@@ -1,1 +1,0 @@
-assets/cursor-effects.js

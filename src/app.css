@@ -180,9 +180,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -263,18 +263,18 @@ textarea {
 
 @font-face {
   font-family: comicSans;
-  src: url(fonts/comic-sans.ttf);
+  src: url(/fonts/comic-sans.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: comicSansItalic;
-  src: url(fonts/comic-sans.ttf);
+  src: url(/fonts/comic-sans.ttf);
   font-weight: normal;
   font-style: italic;
 }
 
 body {
-  cursor: url('https://gwozdz.me/cursor_frames/0.png'), auto;
+  cursor: url('/cursor_frames/0.png'), auto;
 }
