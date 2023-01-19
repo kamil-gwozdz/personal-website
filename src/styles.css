@@ -43,5 +43,5 @@ article p, article h1 {
 }
 
 body {
-    cursor: url(./assets/img/cursor_frames/0.png), auto;
+    cursor: url(/cursor_frames/0.png), auto;
 }
