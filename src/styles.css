@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./assets/img/background_car.png");
+    background-repeat: repeat;
+    background-size: 250px;
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+}
+
+article p, article h1 {
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: comicSans;
+    src: url(./assets/fonts/comic-sans.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: comicSansItalic;
+    src: url(./assets/fonts/comic-sans.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    cursor: url(/cursor_frames/0.png), auto;
+}
