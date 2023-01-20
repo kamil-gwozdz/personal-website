@@ -7,7 +7,7 @@
         background-color: #777;
         text-align: center;
         color: white;
-        height: 6vh;
+        height: 5%;
         position: absolute;
         width: 100%;
         bottom: 0;
@@ -21,6 +21,6 @@
     }
 
     footer marquee {
-        padding: 10px;
+        padding: 6px;
     }
 </style>

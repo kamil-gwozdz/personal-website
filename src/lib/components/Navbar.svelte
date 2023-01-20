@@ -23,7 +23,7 @@
         width: fit-content;
         background: white;
         padding: 5px;
-        height: 80vh;
+        height: 100%;
     }
 
     @media not screen and (max-width: 600px) {

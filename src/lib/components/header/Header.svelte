@@ -9,4 +9,7 @@
 
 <style>
   @import './header.css';
+  header {
+      height: 20%;
+  }
 </style>

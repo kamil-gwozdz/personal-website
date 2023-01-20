@@ -91,8 +91,16 @@
 </script>
 
 <Header />
-<Navbar />
-<article>
-  <slot></slot>
-</article>
+<main>
+  <Navbar />
+  <article>
+    <slot></slot>
+  </article>
+</main>
 <Footer />
+
+<style>
+  main {
+      height: 75%;
+  }
+</style>
