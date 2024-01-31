@@ -1,5 +1,5 @@
 <footer>
-  <marquee><p>Kamil Gwóźdź © 2023</p></marquee>
+  <marquee><p>Kamil Gwóźdź © <span id="year"></span></p></marquee>
 </footer>
 
 <style>
@@ -24,3 +24,14 @@
         padding: 10px;
     }
 </style>
+
+<script lang="ts">
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+      yearElement.innerHTML = new Date().getFullYear().toString();
+    }
+  });
+</script>
