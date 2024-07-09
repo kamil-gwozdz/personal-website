@@ -8,7 +8,7 @@
         text-align: center;
         color: white;
         height: 6vh;
-        position: absolute;
+        position: fixed;
         width: 100%;
         bottom: 0;
         display: flex;
