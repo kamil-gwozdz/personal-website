@@ -13,11 +13,20 @@
     <li><a target="_blank" href="https://github.com/kamil-gwozdz" rel="noreferrer">github</a></li>
   </ul>
 
-  Clock:
-  <canvas id="clock" width="500" height="500"></canvas>
+  <p class="clock-mobile">Clock:<p>
+  <canvas id="clock" class="clock-mobile" width="500" height="500"></canvas>
 </nav>
 
 <style>
+  @media screen and (max-width: 600px) {
+    .clock-mobile {
+      visibility: hidden;
+      clear: both;
+      float: left;
+      display: none;
+    }
+  }
+
     nav {
         float: left;
         width: fit-content;
