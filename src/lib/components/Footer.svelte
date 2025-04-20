@@ -1,5 +1,7 @@
 <footer>
-  <marquee><p>Kamil Gwóźdź © <span id="year"></span></p></marquee>
+  <div class="footer-scroll">
+    <p>Kamil Gwóźdź © <span id="year"></span></p>
+  </div>
 </footer>
 
 <style>
@@ -9,19 +11,38 @@
         color: white;
         height: 6vh;
         position: fixed;
-        width: 100%;
+        width: 100vw;
+        left: 0;
         bottom: 0;
         display: flex;
-        flex-wrap: wrap;
-        align-content: center;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        overflow: hidden;
     }
-
-    footer marquee p {
+    .footer-scroll {
+        width: 100vw;
+        overflow: hidden;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .footer-scroll p {
+        display: inline-block;
         margin: 0;
+        padding: 10px 0;
+        font-size: 1.1em;
+        animation: scroll-left 15s linear infinite;
+        min-width: 100vw;
     }
-
-    footer marquee {
-        padding: 10px;
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(100vw);
+        }
+        100% {
+            transform: translateX(-100vw);
+        }
     }
 </style>
 
