@@ -6,19 +6,6 @@
     { icon: "🗡️", title: "Killer", desc: "Suma cyfr w klatkach musi zgadzać się z podaną wartością" },
     { icon: "🏹", title: "Strzałka", desc: "Cyfry na strzałce sumują się do cyfry w kółku" },
   ];
-
-  const difficulties = [
-    { name: "Łatwy", desc: "Idealne na początek", color: "#4CAF50" },
-    { name: "Średni", desc: "Umiarkowane wyzwanie", color: "#FFC107" },
-    { name: "Trudny", desc: "Wymaga zaawansowanych technik", color: "#FF9800" },
-    { name: "Super Trudny", desc: "Dla ekspertów!", color: "#F44336" },
-  ];
-
-  const gameModes = [
-    { icon: "🧘", name: "Relax", desc: "Bez stresu - nielimitowane podpowiedzi" },
-    { icon: "📝", name: "Normal", desc: "Pokazuje błędy podczas gry" },
-    { icon: "🏆", name: "Challenge", desc: "Błąd kończy grę - dla prawdziwych mistrzów!" },
-  ];
 </script>
 
 <div class="puzzlux-page">
@@ -47,57 +34,6 @@
         </div>
       {/each}
     </div>
-  </section>
-
-  <!-- Difficulties Section -->
-  <section class="difficulties">
-    <h2>📊 Poziomy trudności</h2>
-    <div class="difficulty-list">
-      {#each difficulties as diff}
-        <div class="difficulty-item" style="--accent: {diff.color}">
-          <span class="difficulty-name">{diff.name}</span>
-          <span class="difficulty-desc">{diff.desc}</span>
-        </div>
-      {/each}
-    </div>
-  </section>
-
-  <!-- Game Modes Section -->
-  <section class="game-modes">
-    <h2>🎯 Tryby rozgrywki</h2>
-    <div class="modes-grid">
-      {#each gameModes as mode}
-        <div class="mode-card">
-          <span class="mode-icon">{mode.icon}</span>
-          <h3>{mode.name}</h3>
-          <p>{mode.desc}</p>
-        </div>
-      {/each}
-    </div>
-  </section>
-
-  <!-- Features List -->
-  <section class="highlights">
-    <h2>✨ Funkcje</h2>
-    <ul class="highlights-list">
-      <li>🏆 Game Center - rankingi i osiągnięcia</li>
-      <li>☁️ Synchronizacja iCloud między urządzeniami</li>
-      <li>🎯 Wyzwania od znajomych</li>
-      <li>📈 Szczegółowe statystyki</li>
-      <li>🌙 Tryb ciemny i jasny</li>
-      <li>📱 Wsparcie dla iPhone i iPad</li>
-      <li>✏️ Notatki ołówkowe</li>
-      <li>💡 System podpowiedzi</li>
-    </ul>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta">
-    <h2>Gotowy na wyzwanie? 🧠</h2>
-    <p>Pobierz puzzlux i sprawdź swoje umiejętności logiczne!</p>
-    <a href="https://apps.apple.com/app/puzzlux" target="_blank" rel="noreferrer" class="app-store-btn">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Pobierz w App Store" />
-    </a>
   </section>
 </div>
 
