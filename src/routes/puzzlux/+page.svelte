@@ -137,113 +137,6 @@
     color: #ccc;
   }
 
-  /* Difficulties */
-  .difficulty-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .difficulty-item {
-    background: rgba(255,255,255,0.05);
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-left: 4px solid var(--accent);
-    transition: transform 0.3s ease;
-  }
-
-  .difficulty-item:hover {
-    transform: translateX(10px);
-  }
-
-  .difficulty-name {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: var(--accent);
-  }
-
-  .difficulty-desc {
-    color: #aaa;
-  }
-
-  /* Game Modes */
-  .modes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-
-  .mode-card {
-    background: rgba(255,255,255,0.05);
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: transform 0.3s ease;
-  }
-
-  .mode-card:hover {
-    transform: scale(1.05);
-  }
-
-  .mode-icon {
-    font-size: 3em;
-    display: block;
-    margin-bottom: 15px;
-  }
-
-  .mode-card h3 {
-    margin: 0 0 10px;
-    color: #ffd700;
-  }
-
-  .mode-card p {
-    margin: 0;
-    color: #ccc;
-  }
-
-  /* Highlights */
-  .highlights-list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-  }
-
-  .highlights-list li {
-    background: rgba(255,255,255,0.05);
-    padding: 15px 20px;
-    border-radius: 10px;
-    font-size: 1.1em;
-    transition: background 0.3s ease;
-  }
-
-  .highlights-list li:hover {
-    background: rgba(255,255,255,0.1);
-  }
-
-  /* CTA */
-  .cta {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(180deg, transparent 0%, rgba(0,212,255,0.1) 100%);
-  }
-
-  .cta h2 {
-    color: white;
-    font-size: 2.5em;
-  }
-
-  .cta p {
-    font-size: 1.2em;
-    color: #aaa;
-    margin-bottom: 30px;
-  }
-
   @media (max-width: 600px) {
     .logo {
       font-size: 2.5em;
@@ -251,12 +144,6 @@
 
     .tagline {
       font-size: 1.2em;
-    }
-
-    .difficulty-item {
-      flex-direction: column;
-      text-align: center;
-      gap: 5px;
     }
   }
 </style>
