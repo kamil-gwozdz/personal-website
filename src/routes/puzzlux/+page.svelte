@@ -1,10 +1,10 @@
 <script lang="ts">
   const features = [
-    { icon: "🔢", title: "Klasyczne Sudoku", desc: "Standardowe zasady - wypełnij siatkę cyframi 1-9" },
-    { icon: "🌡️", title: "Termometr", desc: "Cyfry rosną od bańki do końca termometru" },
-    { icon: "🐴", title: "Rycerz", desc: "Komórki oddalone o ruch skoczka muszą się różnić" },
-    { icon: "🗡️", title: "Killer", desc: "Suma cyfr w klatkach musi zgadzać się z podaną wartością" },
-    { icon: "🏹", title: "Strzałka", desc: "Cyfry na strzałce sumują się do cyfry w kółku" },
+    { icon: "🔢", title: "Classic Sudoku", desc: "Standard rules - fill the grid with digits 1-9" },
+    { icon: "🌡️", title: "Thermometer", desc: "Digits increase from the bulb to the end of the thermometer" },
+    { icon: "🐴", title: "Knight", desc: "Cells a knight's move apart must be different" },
+    { icon: "🗡️", title: "Killer", desc: "Digits in cages must sum to the given value" },
+    { icon: "🏹", title: "Arrow", desc: "Digits on the arrow sum to the digit in the circle" },
   ];
 </script>
 
@@ -13,18 +13,18 @@
   <section class="hero">
     <div class="hero-content">
       <h1 class="logo">🧩 puzzlux</h1>
-      <p class="tagline">Najlepsza gra Sudoku na iOS</p>
-      <p class="subtitle">Klasyczne sudoku i rozszerzone warianty w jednej aplikacji</p>
+      <p class="tagline">The ultimate Sudoku game for iOS</p>
+      <p class="subtitle">Classic sudoku and extended variants in one app</p>
       
       <a href="https://apps.apple.com/app/puzzlux" target="_blank" rel="noreferrer" class="app-store-btn">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Pobierz w App Store" />
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
       </a>
     </div>
   </section>
 
   <!-- Features Section -->
   <section class="features">
-    <h2>🎮 Tryby gry</h2>
+    <h2>🎮 Game Modes</h2>
     <div class="features-grid">
       {#each features as feature}
         <div class="feature-card">
