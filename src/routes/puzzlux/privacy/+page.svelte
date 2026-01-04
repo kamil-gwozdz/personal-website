@@ -1,3 +1,18 @@
+<script>
+  import { onMount } from 'svelte';
+  
+  let emailLink: HTMLAnchorElement | null = null;
+  
+  onMount(() => {
+    const encoded = '=UWbuoHZ692dnBEe1xme6VHcrwWatF2a';
+    const decoded = atob(encoded.split('').reverse().join(''));
+    if (emailLink) {
+      emailLink.href = `mailto:${decoded}`;
+      emailLink.textContent = decoded;
+    }
+  });
+</script>
+
 <div class="privacy-page">
   <h1>Privacy Policy</h1>
   <p class="last-updated">Last updated: January 4, 2026</p>
@@ -69,7 +84,7 @@
     <h2>Contact</h2>
     <p>
       If you have any questions about this Privacy Policy, please contact us at:
-      <a href="mailto:kamil.gwozdz@outlook.com">kamil.gwozdz@outlook.com</a>
+      <a bind:this={emailLink} href="#">[loading...]</a>
     </p>
   </section>
 </div>
