@@ -16,7 +16,7 @@
       <p class="tagline">The ultimate Sudoku game for iOS</p>
       <p class="subtitle">Classic sudoku and extended variants in one app</p>
       
-      <a href="https://apps.apple.com/app/puzzlux" target="_blank" rel="noreferrer" class="app-store-btn">
+      <a href="https://apps.apple.com/us/app/puzzlux/id6757359252" target="_blank" rel="noreferrer" class="app-store-btn">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
       </a>
     </div>
