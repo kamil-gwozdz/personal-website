@@ -6,4 +6,4 @@
 
 <h1>Curated Playlists for Driving 🚗</h1>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4FYKCDoe7DMRGRe1SK3xm7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Curated Driving Playlist 1 on Spotify"></iframe>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1SXqrEAszMRDf7oX3J1aKd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Curated Driving Playlist 2 on Spotify"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1SXqrEAszMRDf7oX3J1aKd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Calm driving"></iframe>
