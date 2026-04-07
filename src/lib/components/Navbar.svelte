@@ -13,6 +13,7 @@
     <li><a target="_blank" href="https://stackoverflow.com/users/7987708/kamil-gwóźdź" rel="noreferrer">stack overflow</a></li>
     <li><a target="_blank" href="https://www.instagram.com/cynicalautism/" rel="noreferrer">instagram</a></li>
     <li><a target="_blank" href="https://github.com/kamil-gwozdz" rel="noreferrer">github</a></li>
+    <li><a target="_blank" href="https://substack.com/@kamilgwozdz" rel="noreferrer">substack</a></li>
   </ul>
 
   <p class="clock-mobile">Clock:<p>
