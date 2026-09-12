@@ -16,6 +16,7 @@ section::after {
 article {
     float: left;
     padding: 20px;
+    padding-bottom: calc(6vh + 20px);
     width: 70%;
 }
 
