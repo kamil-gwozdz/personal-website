@@ -4,7 +4,6 @@
     <li><a href="/">About Me</a></li>
     <li><a href="/guest_list">Guest List</a></li>
     <li><a href="/playlists">🚗 Playlists</a></li>
-    <li><a href="/puzzlux">🧩 puzzlux</a></li>
   </ul>
 
   Socials:

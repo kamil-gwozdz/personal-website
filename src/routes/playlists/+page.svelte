@@ -2,3 +2,10 @@
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4FYKCDoe7DMRGRe1SK3xm7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Bangers"></iframe>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1SXqrEAszMRDf7oX3J1aKd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Calm driving"></iframe>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5UFIqZY87KIm0VZax4IiUJ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="jadę autem (w nocy 🌝🚙)"></iframe>
+
+<style>
+    iframe {
+        display: block;
+        margin-bottom: 20px;
+    }
+</style>
